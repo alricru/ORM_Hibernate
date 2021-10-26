@@ -23,6 +23,28 @@ const routes: Routes = [
     path: 'updateProfesores/:idprofesores',
     loadChildren: () => import('./update/update-profesores/update-profesores.module').then( m => m.UpdateProfesoresPageModule)
   },
+
+  {
+    path: 'createAlumnos',
+    loadChildren: () => import('./create/create-alumnos/create-alumnos.module').then( m => m.CreateAlumnosPageModule)
+  },
+  {
+    path: 'listAlumnos',
+    loadChildren: () => import('./list/list-alumnos/list-alumnos.module').then( m => m.ListAlumnosPageModule)
+  },
+  {
+    path: 'createAsignaturas',
+    loadChildren: () => import('./create/create-asignaturas/create-asignaturas.module').then( m => m.CreateAsignaturasPageModule)
+  },
+  {
+    path: 'listAsignaturas',
+    loadChildren: () => import('./list/list-asignaturas/list-asignaturas.module').then( m => m.ListAsignaturasPageModule)
+  },
+  {
+    path: 'updateAsignaturas',
+    loadChildren: () => import('./update/update-asignaturas/update-asignaturas.module').then( m => m.UpdateAsignaturasPageModule)
+  },
+
 ];
 
 @NgModule({
