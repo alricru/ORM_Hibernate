@@ -1,0 +1,16 @@
+<ion-app>
+  <ion-router-outlet></ion-router-outlet>
+</ion-app>
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button routerLinkActive="tab-selected" routerLink="/listProfesores" tab="list">
+      <ion-icon name="list-outline"></ion-icon>
+      <ion-label>Profesor List</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button routerLinkActive="tab-selected" routerLink="/createProfesores" tab="create">
+      <ion-icon name="aperture"></ion-icon>
+      <ion-label>Add Profesor</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
